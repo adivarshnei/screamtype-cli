@@ -1,6 +1,8 @@
+#include <iostream>
+
 #include "charmap.h"
 
-char const *map[95][6] = {
+std::string const map[NUM_CHARS][CHAR_HEIGHT] = {
     { "     ", "     ", "     ", "     ", "     ", "     " },
     { "  _ ", " | |", " | |", " |_|", " (_)", "    " },
     { "  _ _ ", " ( | )", "  V V ", "      ", "      ", "      " },
@@ -236,7 +238,7 @@ char const *map[95][6] = {
     { "  /\\/|", " |/\\/ ", "      ", "      ", "      ", "      " },
 };
 
-unsigned short int const lens[95] = {
+unsigned short int const lens[NUM_CHARS] = {
     5, 4,  6, 11, 6, 7, 9, 4, 5, 5, 7, 8,  4, 8,  4,  7, 8,  4,  8,
     8, 9,  8, 8,  8, 8, 8, 4, 4, 5, 8, 5,  6, 10, 10, 8, 8,  8,  8,
     8, 8,  8, 6,  8, 7, 8, 9, 8, 8, 8, 8,  8, 8,  8,  8, 10, 13, 7,

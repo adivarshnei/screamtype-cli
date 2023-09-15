@@ -1,9 +1,9 @@
 STRING = hello
-CC = gcc
+CC = g++
 CFLAGS = -Wall -Wextra -pedantic -Wfatal-errors -g
 LIBS = -lncurses -lcurses
 RM = rm
-FILES = src/main.c src/charmap.c src/funcs.c
+FILES = src/main.cpp src/charmap.cpp src/funcs.cpp
 OUTPUT = out/main.o
 GREEN = echo -n "\033[0;32m"
 BLUE = echo -n "\033[0;34m"
